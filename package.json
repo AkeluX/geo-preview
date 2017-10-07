@@ -1,0 +1,25 @@
+{
+  "name": "geo-preview",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "A minimal preview tool for geo formats like GoeJSON, KML, etc.",
+  "keywords": [
+    "webworldwind",
+    "kml",
+    "geojson",
+    "shapefile",
+    "collada",
+    "wkt"
+  ],
+  "homepage": "https://github.com/AkeluX/geo-preview",
+  "bugs": "https://github.com/AkeluX/geo-preview/issues",
+  "license": "Apache-2.0",
+  "author": "Yann Voumard",
+  "main": "main.js",
+  "repository": "https://github.com/AkeluX/geo-preview",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}

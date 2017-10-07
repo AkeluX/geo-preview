@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Geo Preview for KML and GeoJSON</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div id="credits">
+      Terrain Light { Data &copy; <a href="javascript:openExternalLink('http://www.openstreetmap.org/copyright')">OpenStreetMap</a> contributors and <a href="javascript:openExternalLink('https://maps.eox.at/#data')">others</a>,
+      Rendering &copy; <a href="javascript:openExternalLink('http://eox.at')">EOX</a> }, Overlay { Data © <a href="javascript:openExternalLink('http://www.openstreetmap.org/copyright')">OpenStreetMap</a> contributors, Rendering &copy; <a href="javascript:openExternalLink('http://eox.at')">EOX</a> and <a href="javascript:openExternalLink('https://github.com/mapserver/basemaps')">MapServer</a> }
+    </div>
+    <div id="drag">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/>
+      </svg>
+    </div>
+    <div id="loading">
+        <div>
+          <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" fill="none" stroke="#2196F3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138" transform="rotate(12 50 50)">
+              <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform>
+            </circle>
+          </svg>
+          <p id="loading-info">Loading the application...</p>
+        </div>
+    </div>
+    <script>
+      require('./libs/worldwind-20171007.min.js');
+      require('./renderer.js');
+    </script>
+  </body>
+</html>
